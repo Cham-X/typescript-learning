@@ -15,7 +15,7 @@ function App() {
       <Heading title="hello" />
       <Section title="different title">This is my section</Section>
       <Counter setCount={setCount}>Count is {count}</Counter>
-      <List items={["coffee","Tacos","code"]}
+      <List items={["coffee","Tacos","code"]} render={(item:string) => <strong>{item}</strong> } />
     </>
   )
 }
